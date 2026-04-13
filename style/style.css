@@ -1,0 +1,124 @@
+:root {
+    /* color custom properties */
+    --primary-purple-50: hsl(260, 100%, 95%);
+    --primary-purple-300: hsl(264, 82%, 80%);
+    --primary-purple-500: hsl(263, 55%, 52%);
+    --white: hsl(0, 0%, 100%);
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+
+    /* font custom properties */
+    --font-11-size: .6875rem;
+    --font-13-size: .8125rem;
+    --font-20-size: 1.25rem;
+
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* ----- Utilities ------ */
+.text-color-white {color: var(--white)}
+.text-color-purple-50 {color: var(--primary-purple-50);}
+.text-color-grey-100 {color: var(--grey-100);}
+.text-color-grey-200 {color: var(--grey-200);}
+.text-color-grey-400 {color: var(--grey-400);}
+.text-color-grey-500 {color: var(--grey-500);}
+
+.text-size-11 {font-size: var(--font-11-size);}
+.text-size-13 {font-size: var(--font-13-size);}
+.text-size-20 {font-size: var(--font-20-size);}
+
+.bg-color-purple-500 {background-color: var(--primary-purple-500);}
+.bg-color-grey-500 {background-color: var(--grey-500);}
+.bg-color-white {background-color: var(--white);}
+.bg-color-dark-blue {background-color: var(--dark-blue);}
+/* --------------------- */
+
+body {
+    margin: 0;
+    background-color: #F6F5F6;
+}
+
+.testimonials {
+    width: 85%;
+    max-width: 69.625em;
+    margin-inline: auto;
+}
+
+.testimony {
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: .3125em .3125em 2em .1em rgb(0, 0, 0, .25);
+}
+
+.testimonials--grid-layout {
+    display: grid;
+    gap: 2em;
+}
+
+@media(min-width: 48em) {
+    .testimonials--grid-layout {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        'daniel daniel'
+        'jonathan jeanette'
+        'patrick patrick'
+        'kira kira';
+    }
+}
+
+@media(min-width: 90em) {
+    .testimonials--grid-layout {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'daniel daniel jonathan kira'
+        'jeanette patrick patrick kira';
+    }
+}
+
+@media(min-width: 48em) {
+    .testimony--daniel {grid-area: daniel;}
+    .testimony--jonathan {grid-area: jonathan;}
+    .testimony--jeanette {grid-area: jeanette;}
+    .testimony--patrick {grid-area: patrick;}
+    .testimony--kira {grid-area: kira;}
+}
+
+/* .testimony__header {
+    height: 1.875em;
+} */
+
+.testimony__header--flex-layout {
+    display: flex;
+    align-items: center;
+    gap: 1.0625em;
+}
+
+.testimony__img {
+    /* max-height: 100%; */ 
+    border-radius: 50%;
+    border: solid .25rem var(--border-color);
+}
+
+.testimony__img--daniel {--border-color: var(--primary-purple-300);}
+.testimony__img--patrick {--border-color: var(--primary-purple-500);}
+
+.testimony__user-info {
+    display: block;  
+}
+
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+    margin-block: 2.9em;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
