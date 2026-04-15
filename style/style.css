@@ -35,6 +35,9 @@
 .text-size-13 {font-size: var(--font-13-size);}
 .text-size-20 {font-size: var(--font-20-size);}
 
+.text-weight-500 {font-weight: 500;}
+.text-weight-600 {font-weight: 600;}
+
 .bg-color-purple-500 {background-color: var(--primary-purple-500);}
 .bg-color-grey-500 {background-color: var(--grey-500);}
 .bg-color-white {background-color: var(--white);}
@@ -44,18 +47,37 @@
 body {
     margin: 0;
     background-color: #F6F5F6;
+    min-height: 100vh;
+
+    /* Flex layout setting */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Font setting */
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
 }
 
 .testimonials {
     width: 85%;
     max-width: 69.625em;
     margin-inline: auto;
+    margin-block-start: clamp(3.9375em, 3.5vw, 5.1875em);
 }
 
 .testimony {
     padding: 2em;
     border-radius: .5em;
     box-shadow: .3125em .3125em 2em .1em rgb(0, 0, 0, .25);
+}
+
+@media(min-width:48em) {
+    .testimony--bg {
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: 80% 0%;
+    }
 }
 
 .testimonials--grid-layout {
@@ -113,8 +135,12 @@ body {
 .testimony__img--patrick {--border-color: var(--primary-purple-500);}
 
 .testimony__user-info {
-    display: block;  
+    display: inline-block;
+    width: 100%;
 }
+
+.testimony__user-info--name {vertical-align: top;}
+.testimony__user-info--status {vertical-align: bottom;}
 
 .attribution { 
     font-size: 0.6875rem; 
