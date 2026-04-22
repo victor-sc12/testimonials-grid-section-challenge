@@ -72,6 +72,10 @@ body {
     box-shadow: .3125em .3125em 2em .1em rgb(0, 0, 0, .25);
 }
 
+.testimonials__main-title--no-display {
+    display: none;
+}
+
 @media(min-width:48em) {
     .testimony--bg {
         background-image: url(../images/bg-pattern-quotation.svg);

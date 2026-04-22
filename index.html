@@ -8,11 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Testimonials grid section</title>
 </head>
 <body>
   <main class="content">
-    <section class="testimonials testimonials--grid-layout">
+    <section class="testimonials testimonials--grid-layout" aria-labelledby="testimonials-main-title">
+      <h1 id="testimonials-main-title" class="testimonials__main-title testimonials__main-title--no-display">Testimonials</h1>
       <article class="testimony testimony--daniel testimony--bg testimonials__article bg-color-purple-500">
         <header class="testimony__header testimony__header--flex-layout">
           <img class="testimony__img testimony__img--daniel" src="images/image-daniel.jpg" alt="Daniel Clifford's profile picture">
@@ -21,8 +22,8 @@
             <span class="testimony__user-info testimony__user-info--status text-size-11 text-color-purple-50 text-weight-500">Verified Graduate</span>
           </span>
         </header>
-        <p class="testimony__paragraph text-size-20 text-color-white text-weight-600">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</p>
-        <p class="testimony__paragraph text-size-13 text-color-purple-50 text-weight-500">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+        <h2 class="testimony__title text-size-20 text-color-white text-weight-600">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h2>
+        <p class="testimony__quote text-size-13 text-color-purple-50 text-weight-500">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
             transition and have heard some people who had an amazing experience here. I signed up 
             for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
             The next 12 weeks was the best - and most grueling - time of my life. Since completing 
@@ -37,7 +38,7 @@
             <span class="testimony__user-info testimony__user-info--status text-size-11 text-color-grey-100 text-weight-500">Verified Graduate</span>
           </span>
         </header>
-        <p class="testimony__paragraph text-size-20 text-color-white text-weight-600">The team was very supportive and kept me motivated</p>
+        <h2 class="testimony__paragraph text-size-20 text-color-white text-weight-600">The team was very supportive and kept me motivated</h2>
         <p class="testimony__paragraph text-size-13 text-color-grey-100 text-weight-500">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
             for a big company. This was one of the best investments I’ve made in myself. ”</p>
       </article>
@@ -50,7 +51,7 @@
             <span class="testimony__user-info testimony__user-info--status text-size-11 text-color-grey-400 text-weight-500">Verified Graduate</span>
           </span> 
         </header>
-        <p class="testimony__paragraph text-size-20 text-color-grey-500 text-weight-600">An overall wonderful and rewarding experience</p>
+        <h2 class="testimony__paragraph text-size-20 text-color-grey-500 text-weight-600">An overall wonderful and rewarding experience</h2>
         <p class="testimony__paragraph text-size-13 text-color-grey-400 text-weight-500">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
             while doing something I love. ”</p>
       </article>
@@ -63,8 +64,8 @@
             <span class="testimony__user-info testimony__user-info--status text-size-11 text-color-white text-weight-500">Verified Graduate</span>
           </span>
         </header>
-        <p class="testimony__paragraph text-size-20 text-color-grey-200 text-weight-600">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-            learning from their experiences was easy.</p>
+        <h2 class="testimony__paragraph text-size-20 text-color-grey-200 text-weight-600">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+            learning from their experiences was easy.</h2>
         <p class="testimony__paragraph text-size-13 text-color-grey-100 text-weight-500">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
             gave me the confidence necessary to be able to go out in the world and present myself as a capable 
             junior developer. The standard is above the rest. You will get the personal attention you need from 
@@ -79,7 +80,7 @@
             <span class="testimony__user-info testimony__user-info--status text-size-11 text-color-grey-400 text-weight-500">Verified Graduate</span>
           </span>
         </header>
-        <p class="testimony__paragraph text-size-20 text-color-grey-500 text-weight-600">Such a life-changing experience. Highly recommended!</p>
+        <h2 class="testimony__paragraph text-size-20 text-color-grey-500 text-weight-600">Such a life-changing experience. Highly recommended!</h2>
         <p class="testimony__paragraph text-size-13 text-color-grey-400 text-weight-500">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
             professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
             student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
